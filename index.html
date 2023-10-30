@@ -1,0 +1,104 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту странницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Color Block Table</title>
+	<meta charset="UTF-8">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.container {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		.slogan_header {
+			height: 10vh;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: blue;
+			background-color: #add8e6;
+		}
+		.slogan_footer {
+			height: 10vh;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 24px;
+			color: blue;
+			background-color: #add8e6;
+		}
+		.sidebar {
+			width: 250px; 
+			background-color: #f0e68c; 
+			vertical-align: baseline;
+		}
+		.list_item{
+			list-style-type: square; 
+			padding: 0 0 0 25px;
+		}
+		.content {
+			padding: 0 25px; 
+			background: url(img/ball1.png) 100% 0% repeat-y; 
+			background-size: 50px;
+		}
+		.content_title {
+			text-align: center; 
+			text-transform: uppercase;
+		}
+		.content_image{
+			margin: 0 20px 20px 0; 
+			float: left; 
+			width: 250px;
+		}
+	</style>
+</head>
+<!-- Отображает тело страницы -->
+
+<body>
+	<table class="container">
+		<thead>
+			<tr>
+				<td class="slogan_header" colspan="2">Привет участникам соревнований!</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="sidebar">
+					<h3>Виды спорта</h3>
+					<ul class="list_item">
+						<li><a href="#">Конькобежный спорт</a></li>
+						<li><a href="#">Биатлон</a></li>
+						<li><a href="#">Футбол</a></li>
+						<li><a href="#">Стрельба из лука</a></li>
+						<li><a href="#">Прыжки в длину</a></li>
+						<li><a href="#">Прыжки в высоту</a></li>
+					</ul>
+				</td>
+				<td class="content">
+					<h3 class="content_title">Футбол</h3>
+					<img class="content_image" src="img/fb.jpg" alt="Иллюстрация футбола" title="Футбол">
+					<p>Футбол - командный вид спорта, в котором целью является забить мяч в ворота соперника ногами или
+						другими частями тела (кроме рук) большее количество раз, чем команда соперника.</p>
+					<p>Есть 17 официальных правил игры, каждое из которых содержит список оговорок и руководящих
+						принципов. Эти правила предназначены для применения на всех уровнях футбола, хотя есть некоторые изменения
+						для таких групп, как юниоры, взрослые, женщины и люди с ограниченными физическими возможностями. Законы
+						очень часто формулировались в общих чертах, которые позволяют упростить их прменения в зависимости от
+						характера игры.</p>
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="2" class="slogan_footer">Главное не победа, а участие!</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
